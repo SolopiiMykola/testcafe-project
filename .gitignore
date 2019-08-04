@@ -4,3 +4,4 @@ package-lock.json
 build
 .idea
 .DS_Store
+/artifacts/

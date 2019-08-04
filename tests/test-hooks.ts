@@ -2,12 +2,12 @@ import {Selector} from "testcafe";
 
 let suite = fixture;
 
-fixture (`Test page`)
+suite (`Test page`)
     .before(async () => {
 
     console.log("Before all >>>>>>")
 
-}).beforeEach(async t => {
+}).beforeEach(async () => {
 
     console.log("Before each >>>>>>")
 
@@ -24,11 +24,8 @@ fixture (`Test page`)
 test.before(async () => {
     console.log("Test Before all >>>>>>")
 
-}).after(async () => {
-
-    console.log("Test after >>>>>>")
-
 })
+
 ('First test', async t => {
 
     await t.wait(3000);
@@ -36,13 +33,13 @@ test.before(async () => {
 
 });
 
-test.before(async () => {
+test.after(async () => {
+
+    console.log("Second Test After all >>>>>>")
+
+}).before(async () => {
 
     console.log("Second Test Before all >>>>>>")
-
-}).after(async () => {
-
-    console.log("Second Test after >>>>>>")
 
 }).page(`http://ip-5236.sunline.net.ua:38015`)
 ('Second test', async t => {
