@@ -10,7 +10,7 @@ test('Wait test', async t => {
     //Wait Mechanism for Actions
     // TestCafe automatically waits for the target element to become visible when an action is executed. default(10000)
     await t
-        .wait(3000)
+        .wait(500)
         // Waits for 'class="account dropdown"' to appear in the DOM.
         .click('[class="account dropdown"]')
         .typeText('[placeholder="Email Address"]', 'solopiy1@i.ua')
@@ -39,7 +39,7 @@ test.only('Second Wait test', async t => {
         .typeText('[placeholder="Password"]', 'password');
     const loginButton = await Selector('[name="login"]', { visibilityCheck: true });
     // Use custom condition
-    await waitForElementToExist(loginButton);
+    await waitForElementToExist(loginButton, 5050, false);
     await waitForElementToBeVisible(loginButton);
     await t.click(loginButton);
     const expectedText = await Selector('.alert.alert-success').innerText;

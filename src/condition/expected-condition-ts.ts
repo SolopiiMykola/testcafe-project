@@ -1,6 +1,6 @@
 import {t} from "testcafe";
 
-const DEFAULT_TIMEOUT = 5000;
+const DEFAULT_TIMEOUT = 10000;
 
 /**
  * Wait the specified amount of time in milliseconds

@@ -1,34 +1,39 @@
 import {Selector} from "testcafe";
+import {wait} from "../condition/expected-condition-ts";
 
 let suite = fixture;
 
-suite (`Test page`)
+export enum Meta {
+    REGRESSION = 'Regression'
+}
+
+fixture.meta({type: Meta.REGRESSION, createdBy: 'Solopii'}) (`Test page`)
     .before(async () => {
 
     console.log("Before all >>>>>>")
 
-}).beforeEach(async () => {
+}).beforeEach(async t => {
 
+    await t.wait(111)
     console.log("Before each >>>>>>")
 
 }).after(async () => {
 
     console.log("After All >>>>>>")
 
-}).afterEach(async () => {
+}).afterEach(async t => {
 
     console.log("After each >>>>>>")
 
 }).page `http://ip-5236.sunline.net.ua:38015/create_account`;
 
-test.before(async () => {
+test.only.before(async t => {
     console.log("Test Before all >>>>>>")
 
 })
 
 ('First test', async t => {
 
-    await t.wait(3000);
     console.log("Run First Test >>>>>>")
 
 });
@@ -44,7 +49,14 @@ test.after(async () => {
 }).page(`http://ip-5236.sunline.net.ua:38015`)
 ('Second test', async t => {
 
-    await t.wait(3000);
     console.log("Run Second Test >>>>>>")
+
+});
+
+fixture
+
+('Second fixture').page(`http://ip-5236.sunline.net.ua:38015/create_account`);
+
+test("lol", async t => {
 
 });

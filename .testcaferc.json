@@ -3,12 +3,12 @@
   "appInitDelay": 3000,
   "browsers": "chrome",
   "src": "tests/test-structure.ts",
-  "selectorTimeout": 1000,
+  "selectorTimeout": 2000,
   "assertionTimeout": 2000,
   "pageLoadTimeout": 2000,
   "speed": 1,
   "screenshotPath": "artifacts/screenshots",
   "takeScreenshotsOnFails": true,
   "screenshotPathPattern": "${FIXTURE}/${TEST}.png",
-  "quarantineMode": true
+  "quarantineMode": false
 }
