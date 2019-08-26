@@ -14,4 +14,4 @@ firstName.forEach(firstDate => {
             console.log(`Test number ${data} executed!`)
         })
     });
-})
+});

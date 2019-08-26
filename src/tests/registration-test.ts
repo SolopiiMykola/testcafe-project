@@ -1,11 +1,16 @@
 import {ClientFunction, Selector} from 'testcafe';
 import * as faker  from "faker";
 import RegistrationPage, {CustomerDetails} from "../pages/registration-page";
+import {createNewUser} from "../api/api-methods";
 
 fixture `Registration page`
-    .page(RegistrationPage.url);
+    .page(RegistrationPage.url)
+    .before(async () => {
+        const res = await createNewUser();
+        console.log("user>>>>>>", res);
+    });
 
-test('Registration tests', async t => {
+test.only('Registration tests', async t => {
 
     const email = faker.internet.email();
     const successMsg = 'Your customer account has been created';
@@ -13,19 +18,19 @@ test('Registration tests', async t => {
     await t
         .typeText('input[name="firstname"]', faker.name.firstName())
         .typeText('input[name="lastname"]', faker.name.lastName())
-        .click('.form-control[name="country_code"]')
-        .click(Selector('option').withAttribute('value', 'UA'))
-        .typeText('[name="customer_form"] [name="email"]', email)
-        .typeText('[name="customer_form"] [name="password"]', "password")
-        .typeText('[name="customer_form"] [name="confirmed_password"]', "password")
-        .click('[name="newsletter"]')
-        .click('[name="create_account"]');
-
-    const expectedText = await Selector('.alert.alert-success').innerText;
-    const expectedPageUrl = ClientFunction(() => window.location.href);
-    await t
-        .expect(expectedText.replace(/[^A-Za-z0-9]/g, ' ').trim()).eql(successMsg)
-        .expect(expectedPageUrl()).contains('');
+    //     .click('.form-control[name="country_code"]')
+    //     .click(Selector('option').withAttribute('value', 'UA'))
+    //     .typeText('[name="customer_form"] [name="email"]', email)
+    //     .typeText('[name="customer_form"] [name="password"]', "password")
+    //     .typeText('[name="customer_form"] [name="confirmed_password"]', "password")
+    //     .click('[name="newsletter"]')
+    //     .click('[name="create_account"]');
+    //
+    // const expectedText = await Selector('.alert.alert-success').innerText;
+    // const expectedPageUrl = ClientFunction(() => window.location.href);
+    // await t
+    //     .expect(expectedText.replace(/[^A-Za-z0-9]/g, ' ').trim()).eql(successMsg)
+    //     .expect(expectedPageUrl()).contains('');
 });
 
 test('All fields test', async t => {
