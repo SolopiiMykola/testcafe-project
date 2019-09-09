@@ -1,4 +1,5 @@
 import {t} from "testcafe";
+import {IWebDriver} from "../pages/base-web-driver";
 
 export class AssertionsTC {
 

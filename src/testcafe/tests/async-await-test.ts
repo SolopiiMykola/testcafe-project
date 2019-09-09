@@ -1,4 +1,4 @@
-import RegistrationPage from "../pages/registration-page";
+import RegistrationPage from "../../pages/registration-page";
 import * as faker from "faker";
 
 fixture `Registration page`

@@ -11,7 +11,6 @@ export async function createNewUser() {
     let res = await request.post('http://ip-5236.sunline.net.ua:38015/create_account',
         {
             form: {
-                token: token,
                 company: "",
                 tax_id: "",
                 firstname: "lol",

@@ -1,5 +1,5 @@
 import {Selector} from "testcafe";
-import {wait} from "../condition/expected-condition-ts";
+import {wait} from "../expected-condition-tc";
 
 let suite = fixture;
 

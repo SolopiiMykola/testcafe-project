@@ -1,6 +1,8 @@
-import {Selector, t} from "testcafe";
 import BasePage from "./base-page";
 import {baseUrl} from "../config/configFile";
+import {WebDriverTC} from "../testcafe/web-driver-tc";
+
+const webDriver = new WebDriverTC();
 
 // PO it is automation pattern to describe only specific page like a object
 // Page fragments describe the specific block of the web page
@@ -13,40 +15,36 @@ class RegistrationPage extends BasePage {
     }
 
     url: string = `${baseUrl}create_account`;
-    company = Selector('input[name="company"]');
-    firstNameInput = Selector('input[name="firstname"]');
-    lastNameInput = Selector('input[name="lastname"]');
-    countryCodeInput = Selector('.form-control[name="country_code"]');
-    zoneCodeInput = Selector('.form-control[name="zone_code"]');
-    emailInput = Selector('[name="customer_form"] [name="email"]');
-    passwordInput = Selector('[name="customer_form"] [name="password"]');
-    confirmPasswordInput = Selector('[name="customer_form"] [name="confirmed_password"]');
-    newsButton = Selector('[name="newsletter"]');
-    createAccountButton = Selector('[name="create_account"]');
-    successRegistrationMessage = Selector('.alert.alert-success');
+    company = 'input[name="company"]';
+    firstNameInput = 'input[name="firstname"]';
+    lastNameInput = 'input[name="lastname"]';
+    countryCodeInput = '.form-control[name="country_code"]';
+    zoneCodeInput = '.form-control[name="zone_code"]';
+    emailInput = '[name="customer_form"] [name="email"]';
+    passwordInput = '[name="customer_form"] [name="password"]';
+    confirmPasswordInput = '[name="customer_form"] [name="confirmed_password"]';
+    newsButton = '[name="newsletter"]';
+    createAccountButton = '[name="create_account"]';
+    successRegistrationMessage = '.alert.alert-success';
 
     async registerNewUser(customerDetails: CustomerDetails): Promise<void> {
         // Mandatory fields
-        await t
-        .typeText(this.firstNameInput, customerDetails.firstName)
-        .typeText(this.lastNameInput, customerDetails.lastName )
-        .click(this.countryCodeInput)
-        .click(Selector('option').withAttribute('value', customerDetails.countryCode))
-        .typeText(this.emailInput, customerDetails.email)
-        .typeText(this.passwordInput, customerDetails.password)
-        .typeText(this.confirmPasswordInput, customerDetails.confirmPassword);
+        await webDriver.typeText(this.firstNameInput, customerDetails.firstName);
+        await webDriver.typeText(this.lastNameInput, customerDetails.lastName);
+        await webDriver.selectDropDownOptionByAttributeValue(this.countryCodeInput, customerDetails.countryCode);
+        await webDriver.typeText(this.emailInput, customerDetails.email);
+        await webDriver.typeText(this.passwordInput, customerDetails.password);
+        await webDriver.typeText(this.confirmPasswordInput, customerDetails.confirmPassword);
         // Optional
         if (customerDetails.company) {
-            await t.typeText(this.company, customerDetails.company)
+            await webDriver.typeText(this.company, customerDetails.company)
         }
-        await t
-        .click(this.newsButton)
-        .click(this.createAccountButton);
+        await webDriver.click(this.newsButton);
+        await webDriver.click(this.createAccountButton);
     }
 
     async getRegistrationSuccessMessage(): Promise<string> {
-        const expectedText = await this.successRegistrationMessage.innerText;
-        return  expectedText.replace(/[^A-Za-z0-9]/g, ' ').trim();
+        return webDriver.getText(this.successRegistrationMessage, /\W/g);
     }
 }
 

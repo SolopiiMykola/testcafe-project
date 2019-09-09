@@ -6,10 +6,6 @@ setTimeout(() => {
 }, 2000);
 
 setTimeout(() => {
-    console.log('Inside callback(1)');
-}, 2000);
-
-setTimeout(() => {
     console.log('Inside second callback');
 }, 0);
 

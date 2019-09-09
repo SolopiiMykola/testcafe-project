@@ -1,5 +1,5 @@
 let fs = require('fs');
-const util = require('util')
+const util = require('util');
 console.time('file-read');
 
 let promise = new Promise(function (resolve, reject) {

@@ -1,5 +1,5 @@
 import {ClientFunction, Selector} from 'testcafe';
-import {isVisible, wait, waitForElementToBeVisible, waitForElementToExist} from "../condition/expected-condition-ts";
+import {isVisible, wait, waitForElementToBeVisible, waitForElementToExist} from "../expected-condition-tc";
 
 const successMsg = 'You are now logged in as My User';
 

@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1567937665090' stop='1567937665090'>
+    <name>Registration page</name>
+    <title>Registration page</title>
+    <test-cases>
+        <test-case start='1567937665090' status='passed' stop='1567937675799'>
+            <name>File upload test</name>
+            <title>File upload test</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 76.0.3809 / Mac OS X 10.14.3'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been passed.</message>
+                <stack-trace>no error</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
