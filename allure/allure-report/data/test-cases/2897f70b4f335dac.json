@@ -1,0 +1,62 @@
+{
+  "uid" : "2897f70b4f335dac",
+  "name" : "File upload test",
+  "fullName" : "File uploading.File upload test",
+  "historyId" : "bdc12550d88779985aeee84edd446a38",
+  "time" : {
+    "start" : 1568048993585,
+    "stop" : 1568049005712,
+    "duration" : 12127
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "statusMessage" : "This test has been passed.",
+  "statusTrace" : "no error",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "undefined"
+  }, {
+    "name" : "suite",
+    "value" : "File uploading"
+  }, {
+    "name" : "testClass",
+    "value" : "File uploading"
+  }, {
+    "name" : "testMethod",
+    "value" : "File upload test"
+  }, {
+    "name" : "package",
+    "value" : "File uploading"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "User Agent",
+    "value" : "Chrome 76.0.3809 / Mac OS X 10.14.3"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "ba8a8221376d47a1",
+      "status" : "failed",
+      "statusDetails" : "This test has been broken",
+      "time" : {
+        "start" : 1568044109459,
+        "stop" : 1568044120784,
+        "duration" : 11325
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2897f70b4f335dac.json",
+  "parameterValues" : [ "Chrome 76.0.3809 / Mac OS X 10.14.3" ]
+}

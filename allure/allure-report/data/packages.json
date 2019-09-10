@@ -1,0 +1,97 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "Registration page",
+    "children" : [ {
+      "name" : "Registration tests",
+      "uid" : "c9e4b11156bbfe61",
+      "parentUid" : "72fccba881c3e75f03a2fb355b7be903",
+      "status" : "failed",
+      "time" : {
+        "start" : 1568044069728,
+        "stop" : 1568044069730,
+        "duration" : 2
+      },
+      "flaky" : false,
+      "parameters" : [ "HeadlessChrome 76.0.3809 / Mac OS X 10.14.3" ]
+    }, {
+      "name" : "All fields test",
+      "uid" : "4e70c07f7b5f6777",
+      "parentUid" : "72fccba881c3e75f03a2fb355b7be903",
+      "status" : "failed",
+      "time" : {
+        "start" : 1568044069749,
+        "stop" : 1568044069750,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "parameters" : [ "HeadlessChrome 76.0.3809 / Mac OS X 10.14.3" ]
+    }, {
+      "name" : "US registration test",
+      "uid" : "1f49d629ea03fc54",
+      "parentUid" : "72fccba881c3e75f03a2fb355b7be903",
+      "status" : "failed",
+      "time" : {
+        "start" : 1568044069755,
+        "stop" : 1568044069755,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "parameters" : [ "HeadlessChrome 76.0.3809 / Mac OS X 10.14.3" ]
+    }, {
+      "name" : "Registration tests",
+      "uid" : "e4f953d46db1c8d1",
+      "parentUid" : "72fccba881c3e75f03a2fb355b7be903",
+      "status" : "failed",
+      "time" : {
+        "start" : 1568044189506,
+        "stop" : 1568044189507,
+        "duration" : 1
+      },
+      "flaky" : true,
+      "parameters" : [ "Chrome 76.0.3809 / Mac OS X 10.14.3" ]
+    }, {
+      "name" : "All fields test",
+      "uid" : "19408ee2aae433c5",
+      "parentUid" : "72fccba881c3e75f03a2fb355b7be903",
+      "status" : "failed",
+      "time" : {
+        "start" : 1568044189529,
+        "stop" : 1568044189529,
+        "duration" : 0
+      },
+      "flaky" : true,
+      "parameters" : [ "Chrome 76.0.3809 / Mac OS X 10.14.3" ]
+    }, {
+      "name" : "US registration test",
+      "uid" : "de116c53ad82058a",
+      "parentUid" : "72fccba881c3e75f03a2fb355b7be903",
+      "status" : "failed",
+      "time" : {
+        "start" : 1568044189537,
+        "stop" : 1568044189537,
+        "duration" : 0
+      },
+      "flaky" : true,
+      "parameters" : [ "Chrome 76.0.3809 / Mac OS X 10.14.3" ]
+    } ],
+    "uid" : "72fccba881c3e75f03a2fb355b7be903"
+  }, {
+    "name" : "File uploading",
+    "children" : [ {
+      "name" : "File upload test",
+      "uid" : "2897f70b4f335dac",
+      "parentUid" : "62efa776142b8c73b8b5d734d726aefd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1568048993585,
+        "stop" : 1568049005712,
+        "duration" : 12127
+      },
+      "flaky" : true,
+      "parameters" : [ "Chrome 76.0.3809 / Mac OS X 10.14.3" ]
+    } ],
+    "uid" : "62efa776142b8c73b8b5d734d726aefd"
+  } ]
+}

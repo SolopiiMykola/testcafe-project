@@ -1,9 +1,9 @@
 <?xml version='1.0'?>
-<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1567937665090' stop='1567937665090'>
-    <name>Registration page</name>
-    <title>Registration page</title>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1568048993585' stop='1568048993585'>
+    <name>File uploading</name>
+    <title>File uploading</title>
     <test-cases>
-        <test-case start='1567937665090' status='passed' stop='1567937675799'>
+        <test-case start='1568048993585' status='passed' stop='1568049005712'>
             <name>File upload test</name>
             <title>File upload test</title>
             <labels>

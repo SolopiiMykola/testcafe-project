@@ -1,9 +1,12 @@
 import * as faker from "faker";
 import {ClientFunction, t} from "testcafe";
+import RegistrationPage from "../../pages/registration-page";
+
+fixture `Registration page`
+    .page(RegistrationPage.url);
 
 test('Register user via js', async () => {
     const email = faker.internet.email();
-
 
     const registerUser = ClientFunction((email1) => {
         // @ts-ignore
@@ -23,5 +26,4 @@ test('Register user via js', async () => {
     });
     await registerUser(email);
     await t.wait(2000)
-
 });

@@ -1,0 +1,45 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1568044189537' stop='1568044189542'>
+    <name>Registration page</name>
+    <title>Registration page</title>
+    <test-cases>
+        <test-case start='1568044189537' status='failed' stop='1568044189537'>
+            <name>US registration test</name>
+            <title>US registration test</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 76.0.3809 / Mac OS X 10.14.3'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>- Error in fixture.before hook -
+                StatusCodeError: 400 - "HTTP POST Error: The form submit token is either invalid or issued for another session identity. Your request has therefore not been processed. Please try again."
+                
+                Browser: Chrome 76.0.3809 / Mac OS X 10.14.3
+                
+                   27 |    this.error = body; // legacy attribute
+                   28 |    this.options = options;
+                   29 |    this.response = response;
+                   30 |
+                   31 |    if (Error.captureStackTrace) { // required for non-V8 environments
+                 > 32 |        Error.captureStackTrace(this);
+                   33 |    }
+                   34 |
+                   35 |}
+                   36 |StatusCodeError.prototype = Object.create(Error.prototype);
+                   37 |StatusCodeError.prototype.constructor = StatusCodeError;
+                
+                   at new StatusCodeError (/Users/smykola/Documents/testing-course/testcafe-project/node_modules/request-promise-core/lib/errors.js:32:15)
+                   at Request.plumbing.callback (/Users/smykola/Documents/testing-course/testcafe-project/node_modules/request-promise-core/lib/plumbing.js:104:33)
+                   at Request.RP$callback [as _callback] (/Users/smykola/Documents/testing-course/testcafe-project/node_modules/request-promise-core/lib/plumbing.js:46:31)
+                   at Request.self.callback (/Users/smykola/Documents/testing-course/testcafe-project/node_modules/request/request.js:185:22)
+                   at Request.&lt;anonymous> (/Users/smykola/Documents/testing-course/testcafe-project/node_modules/request/request.js:1161:10)
+                   at IncomingMessage.&lt;anonymous> (/Users/smykola/Documents/testing-course/testcafe-project/node_modules/request/request.js:1083:12)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

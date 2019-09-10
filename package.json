@@ -4,8 +4,9 @@
   "description": "test project",
   "main": "index.js",
   "scripts": {
-    "test": "testcafe src/testcafe/tests/* -r allure",
-    "test:chrome:debug": "testcafe $NODE_DEBUG_OPTION chrome ./src/testcafe/tests/*"
+    "test": "testcafe src/testcafe/tests/*" ,
+    "test:chrome:debug": "testcafe $NODE_DEBUG_OPTION chrome ./src/testcafe/tests/*",
+    "test:ci": "testcafe \"chrome:headless --start-fullscreen\" ./src/testcafe/tests/*"
   },
   "author": "M. Solopii",
   "devDependencies": {

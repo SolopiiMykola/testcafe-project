@@ -1,0 +1,71 @@
+[ {
+  "uid" : "c9e4b11156bbfe61",
+  "name" : "Registration tests",
+  "time" : {
+    "start" : 1568044069728,
+    "stop" : 1568044069730,
+    "duration" : 2
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "de116c53ad82058a",
+  "name" : "US registration test",
+  "time" : {
+    "start" : 1568044189537,
+    "stop" : 1568044189537,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "e4f953d46db1c8d1",
+  "name" : "Registration tests",
+  "time" : {
+    "start" : 1568044189506,
+    "stop" : 1568044189507,
+    "duration" : 1
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "1f49d629ea03fc54",
+  "name" : "US registration test",
+  "time" : {
+    "start" : 1568044069755,
+    "stop" : 1568044069755,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "19408ee2aae433c5",
+  "name" : "All fields test",
+  "time" : {
+    "start" : 1568044189529,
+    "stop" : 1568044189529,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "4e70c07f7b5f6777",
+  "name" : "All fields test",
+  "time" : {
+    "start" : 1568044069749,
+    "stop" : 1568044069750,
+    "duration" : 1
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "2897f70b4f335dac",
+  "name" : "File upload test",
+  "time" : {
+    "start" : 1568048993585,
+    "stop" : 1568049005712,
+    "duration" : 12127
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

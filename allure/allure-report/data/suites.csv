@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Mon Sep 09 18:47:49 EEST 2019","Mon Sep 09 18:47:49 EEST 2019","2","","Registration page","","Registration page","Registration tests","Registration tests",""
+"failed","Mon Sep 09 18:49:49 EEST 2019","Mon Sep 09 18:49:49 EEST 2019","0","","Registration page","","Registration page","US registration test","US registration test",""
+"failed","Mon Sep 09 18:49:49 EEST 2019","Mon Sep 09 18:49:49 EEST 2019","1","","Registration page","","Registration page","Registration tests","Registration tests",""
+"failed","Mon Sep 09 18:47:49 EEST 2019","Mon Sep 09 18:47:49 EEST 2019","0","","Registration page","","Registration page","US registration test","US registration test",""
+"failed","Mon Sep 09 18:49:49 EEST 2019","Mon Sep 09 18:49:49 EEST 2019","0","","Registration page","","Registration page","All fields test","All fields test",""
+"failed","Mon Sep 09 18:47:49 EEST 2019","Mon Sep 09 18:47:49 EEST 2019","1","","Registration page","","Registration page","All fields test","All fields test",""
+"passed","Mon Sep 09 20:09:53 EEST 2019","Mon Sep 09 20:10:05 EEST 2019","12127","","File uploading","","File uploading","File upload test","File upload test",""

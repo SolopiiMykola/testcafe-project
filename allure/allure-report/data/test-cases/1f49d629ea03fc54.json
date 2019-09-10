@@ -1,0 +1,57 @@
+{
+  "uid" : "1f49d629ea03fc54",
+  "name" : "US registration test",
+  "fullName" : "Registration page.US registration test",
+  "historyId" : "ab31f87aadfeaf097dd47cfe43f5c16a",
+  "time" : {
+    "start" : 1568044069755,
+    "stop" : 1568044069755,
+    "duration" : 0
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "This test has been broken",
+  "statusTrace" : "- Error in fixture.before hook -\n                StatusCodeError: 400 - \"HTTP POST Error: The form submit token is either invalid or issued for another session identity. Your request has therefore not been processed. Please try again.\"\n                \n                Browser: HeadlessChrome 76.0.3809 / Mac OS X 10.14.3\n                \n                   27 |    this.error = body; // legacy attribute\n                   28 |    this.options = options;\n                   29 |    this.response = response;\n                   30 |\n                   31 |    if (Error.captureStackTrace) { // required for non-V8 environments\n                 > 32 |        Error.captureStackTrace(this);\n                   33 |    }\n                   34 |\n                   35 |}\n                   36 |StatusCodeError.prototype = Object.create(Error.prototype);\n                   37 |StatusCodeError.prototype.constructor = StatusCodeError;\n                \n                   at new StatusCodeError (/Users/smykola/Documents/testing-course/testcafe-project/node_modules/request-promise-core/lib/errors.js:32:15)\n                   at Request.plumbing.callback (/Users/smykola/Documents/testing-course/testcafe-project/node_modules/request-promise-core/lib/plumbing.js:104:33)\n                   at Request.RP$callback [as _callback] (/Users/smykola/Documents/testing-course/testcafe-project/node_modules/request-promise-core/lib/plumbing.js:46:31)\n                   at Request.self.callback (/Users/smykola/Documents/testing-course/testcafe-project/node_modules/request/request.js:185:22)\n                   at Request.<anonymous> (/Users/smykola/Documents/testing-course/testcafe-project/node_modules/request/request.js:1161:10)\n                   at IncomingMessage.<anonymous> (/Users/smykola/Documents/testing-course/testcafe-project/node_modules/request/request.js:1083:12)",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "undefined"
+  }, {
+    "name" : "suite",
+    "value" : "Registration page"
+  }, {
+    "name" : "testClass",
+    "value" : "Registration page"
+  }, {
+    "name" : "testMethod",
+    "value" : "US registration test"
+  }, {
+    "name" : "package",
+    "value" : "Registration page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "User Agent",
+    "value" : "HeadlessChrome 76.0.3809 / Mac OS X 10.14.3"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "1f49d629ea03fc54.json",
+  "parameterValues" : [ "HeadlessChrome 76.0.3809 / Mac OS X 10.14.3" ]
+}

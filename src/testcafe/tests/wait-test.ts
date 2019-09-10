@@ -32,7 +32,7 @@ test('Wait test', async t => {
         .navigateTo('http://ip-5236.sunline.net.ua:38015/create_account')
 });
 
-test.only('Second Wait test', async t => {
+test('Second Wait test', async t => {
     await t
         .click('[class="account dropdown"]')
         .typeText('[placeholder="Email Address"]', 'solopiy1@i.ua')

@@ -1,6 +1,6 @@
 import {ClientFunction, Selector} from 'testcafe';
 import * as faker  from "faker";
-import RegistrationPage, {CustomerDetails} from "../../pages/registration-page";
+import RegistrationPage from "../../pages/registration-page";
 import {createNewUser} from "../../api/api-methods";
 
 fixture `Registration page`

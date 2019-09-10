@@ -27,7 +27,7 @@ fixture.meta({type: Meta.REGRESSION, createdBy: 'Solopii'}) (`Test page`)
 
 }).page `http://ip-5236.sunline.net.ua:38015/create_account`;
 
-test.only.before(async t => {
+test.before(async t => {
     console.log("Test Before all >>>>>>")
 
 })

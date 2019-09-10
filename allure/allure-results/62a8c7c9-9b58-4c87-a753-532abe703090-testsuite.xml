@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1568044109459' stop='1568044109481'>
+    <name>File uploading</name>
+    <title>File uploading</title>
+    <test-cases>
+        <test-case start='1568044109459' status='failed' stop='1568044120784'>
+            <name>File upload test</name>
+            <title>File upload test</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 76.0.3809 / Mac OS X 10.14.3'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='62783b6d-5061-4f4c-b904-7f2e589aa000-attachment.png' type='image/png' size='121248'/>
+            </attachments>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('[id="file-submi"]')
+                
+                Browser: Chrome 76.0.3809 / Mac OS X 10.14.3
+                Screenshot: /Users/smykola/Documents/testing-course/testcafe-project/artifacts/screenshots/File uploading/File upload test.png
+                
+                   12 |test.only('File upload test', async () => {
+                   13 |    const fileUploadElement = 'input[id="file-upload"]';
+                   14 |    const files = fs.createReadStream(path.resolve(__dirname, "../../fixture/avatar.jpg"));
+                   15 |    await t.click(fileUploadElement);
+                   16 |    await webDriver.setTestFileUpload(fileUploadElement, [files.path.toString()]);
+                 > 17 |    await t.click('[id="file-submi"]');
+                   18 |    await t.wait(5000)
+                   19 |});
+                
+                   at Object.&lt;anonymous> (/Users/smykola/Documents/testing-course/testcafe-project/src/testcafe/tests/upload-file.ts:17:13)
+                   at fulfilled (/Users/smykola/Documents/testing-course/testcafe-project/src/testcafe/tests/upload-file.ts:4:58)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

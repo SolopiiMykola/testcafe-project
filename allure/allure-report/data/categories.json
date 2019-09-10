@@ -1,0 +1,85 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "This test has been broken",
+      "children" : [ {
+        "name" : "Registration tests",
+        "uid" : "c9e4b11156bbfe61",
+        "parentUid" : "0caa3dfa63d91f62e71c10db3af631f9",
+        "status" : "failed",
+        "time" : {
+          "start" : 1568044069728,
+          "stop" : 1568044069730,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "parameters" : [ "HeadlessChrome 76.0.3809 / Mac OS X 10.14.3" ]
+      }, {
+        "name" : "All fields test",
+        "uid" : "4e70c07f7b5f6777",
+        "parentUid" : "0caa3dfa63d91f62e71c10db3af631f9",
+        "status" : "failed",
+        "time" : {
+          "start" : 1568044069749,
+          "stop" : 1568044069750,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "parameters" : [ "HeadlessChrome 76.0.3809 / Mac OS X 10.14.3" ]
+      }, {
+        "name" : "US registration test",
+        "uid" : "1f49d629ea03fc54",
+        "parentUid" : "0caa3dfa63d91f62e71c10db3af631f9",
+        "status" : "failed",
+        "time" : {
+          "start" : 1568044069755,
+          "stop" : 1568044069755,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ "HeadlessChrome 76.0.3809 / Mac OS X 10.14.3" ]
+      }, {
+        "name" : "Registration tests",
+        "uid" : "e4f953d46db1c8d1",
+        "parentUid" : "0caa3dfa63d91f62e71c10db3af631f9",
+        "status" : "failed",
+        "time" : {
+          "start" : 1568044189506,
+          "stop" : 1568044189507,
+          "duration" : 1
+        },
+        "flaky" : true,
+        "parameters" : [ "Chrome 76.0.3809 / Mac OS X 10.14.3" ]
+      }, {
+        "name" : "All fields test",
+        "uid" : "19408ee2aae433c5",
+        "parentUid" : "0caa3dfa63d91f62e71c10db3af631f9",
+        "status" : "failed",
+        "time" : {
+          "start" : 1568044189529,
+          "stop" : 1568044189529,
+          "duration" : 0
+        },
+        "flaky" : true,
+        "parameters" : [ "Chrome 76.0.3809 / Mac OS X 10.14.3" ]
+      }, {
+        "name" : "US registration test",
+        "uid" : "de116c53ad82058a",
+        "parentUid" : "0caa3dfa63d91f62e71c10db3af631f9",
+        "status" : "failed",
+        "time" : {
+          "start" : 1568044189537,
+          "stop" : 1568044189537,
+          "duration" : 0
+        },
+        "flaky" : true,
+        "parameters" : [ "Chrome 76.0.3809 / Mac OS X 10.14.3" ]
+      } ],
+      "uid" : "0caa3dfa63d91f62e71c10db3af631f9"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}
