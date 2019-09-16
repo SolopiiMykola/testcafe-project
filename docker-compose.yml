@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  testcafe:
+    container_name: testcafe_${BROWSER}
+    image: testcafe/testcafe
+    environment:
+      - NODE_PATH=/opt/testcafe/node_modules:/opt
+      - SCREEN_WIDTH=1920
+      - SCREEN_HEIGHT=1080
+    volumes:
+      - ./src:/src/testcafe/tests/run-js-code.ts
+      - ./screenshots:/screenshots
+    entrypoint: ["/opt/testcafe/docker/testcafe-docker.sh", "${BROWSER} --no-sandbox", "-S", "-s", "screenshots", "/src/testcafe/tests/run-js-code.ts"]

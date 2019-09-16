@@ -4,7 +4,8 @@
   "description": "test project",
   "main": "index.js",
   "scripts": {
-    "test": "testcafe src/testcafe/tests/*" ,
+    "start:chrome": "testcafe chrome src/testcafe/tests -S -s screenshots",
+    "test": "testcafe remote src/testcafe/tests/registration-po-test.ts" ,
     "test:chrome:debug": "testcafe $NODE_DEBUG_OPTION chrome ./src/testcafe/tests/*",
     "test:ci": "testcafe \"chrome:headless --start-fullscreen\" ./src/testcafe/tests/*"
   },
